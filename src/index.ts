@@ -4,11 +4,11 @@ import 'zone.js/dist/zone';
 import '@angular/common';
 import 'rxjs';
 
-import './index.scss';
+import './assets/index.scss';
 
 import {enableProdMode} from '@angular/core';
 import {platformBrowserDynamic} from '@angular/platform-browser-dynamic';
-import {AppModule} from './app';
+import {AppModule} from './app/components';
 
 declare var process: any;
 if (process.env.NODE_ENV === 'production') {
