@@ -22,11 +22,12 @@ import { User } from './user';
     </table>
   `
 })
-export class UserComponent implements OnInit{
-  constructor(private userService : UserService) {  }
 
-  errorMessage: string;
-  users: User[];
+export class UserComponent implements OnInit {
+  public errorMessage: string;
+  public users: User[];
+
+  constructor(private userService : UserService) {  }
 
   ngOnInit() { this.getHeroes(); }
 
