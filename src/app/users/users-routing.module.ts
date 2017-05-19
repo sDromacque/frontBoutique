@@ -12,7 +12,8 @@ export const routes: Routes = [
   {
     path: '',
     component: UserListComponent
-  }
+  },
+
 ];
 
 export const routing = RouterModule.forRoot(routes);

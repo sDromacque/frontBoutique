@@ -5,13 +5,15 @@ import { routing, RootComponent } from './users-routing.module';
 import { UserListComponent } from './user-list/user-list.component';
 import { HttpModule, JsonpModule } from '@angular/http';
 import { requestOptionsProvider }   from './shared/default-request-options.service';
+import { CoreModule } from '../core/core.module';
 
 @NgModule({
   imports: [
     BrowserModule,
     routing,
     HttpModule,
-    JsonpModule
+    JsonpModule,
+    CoreModule
   ],
   declarations: [
     RootComponent,
@@ -20,4 +22,4 @@ import { requestOptionsProvider }   from './shared/default-request-options.servi
   bootstrap: [RootComponent],
   providers: [ requestOptionsProvider ]
 })
-export class AppModule {}
+export class UserModule {}
