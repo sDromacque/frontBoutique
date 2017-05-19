@@ -2,10 +2,10 @@ import { Injectable } from '@angular/core';
 import { Http, Response } from '@angular/http';
 
 import 'rxjs/add/operator/toPromise';
-import { User } from './user';
+import { User } from '../shared/user';
 
 @Injectable()
-export class UserService {
+export class UserListService {
   public urlApiUser = 'http://localhost:1337/user';
 
   constructor(private http: Http)  {}

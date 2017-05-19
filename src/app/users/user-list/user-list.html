@@ -1,0 +1,15 @@
+<table class="table table-bordered">
+  <thead>
+  <tr>
+    <th>Object Id</th>
+    <th>Name</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let user of users" >
+    <td>{{user._id}}</td>
+    <td>{{user.name}}</td>
+  </tr>
+  </tbody>
+</table>
+`
