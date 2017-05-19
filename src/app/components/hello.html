@@ -1,1 +1,4 @@
-<h1>{{ hello }}</h1>
+<h1>Users</h1>
+<ul>
+  <li *ngFor="let item of users | async">{{item}}</li>
+</ul>
