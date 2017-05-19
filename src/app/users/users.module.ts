@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { routing, RootComponent } from './routes';
+import { routing, RootComponent } from './users-routing.module';
 
 import { UserListComponent } from './user-list/user-list.component';
 import { HttpModule, JsonpModule } from '@angular/http';
