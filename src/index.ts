@@ -9,6 +9,7 @@ import './assets/index.scss';
 import {enableProdMode} from '@angular/core';
 import {platformBrowserDynamic} from '@angular/platform-browser-dynamic';
 import {AppModule} from './app/users/users.module';
+import {HomeModule} from './app/home/home.module';
 
 declare var process: any;
 if (process.env.NODE_ENV === 'production') {
@@ -18,4 +19,4 @@ if (process.env.NODE_ENV === 'production') {
   require('zone.js/dist/long-stack-trace-zone'); // tslint:disable-line:no-var-requires
 }
 
-platformBrowserDynamic().bootstrapModule(AppModule);
+platformBrowserDynamic().bootstrapModule(HomeModule);
